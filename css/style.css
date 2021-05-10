@@ -1,10 +1,15 @@
 /*
 Colors used:
-Primary Color (purple): #43215D;
-Secondary Color (pink): #7B2369;
+Primary Color (dark purple): #230C42;
+Secondary Color (purple): #571C6E;
+Accent Color 1 (blue): #7F0FF5;
+Accent Color 2 (pink): #A01D7A;
 */
+header{
+  background-color: #230C42;
+}
 body {
-  background-color: dark pink
+  background-color: dark purple
 }
 
 img {
@@ -41,23 +46,23 @@ h4 {
   font-weight: 400;
 }
 a {
-  color: #ff7f50;
+  color: #A01D7A;
   text-decoration: none; /* No underlining */
 }
 
 a:visited { /* visited link */
-  color: #ff7f50;
+  color: #A01D7A;
 }
 a:hover {
-  color: #cc6540;
+  color: #571C6E;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 a:active { /* selected link */
-  color: #994c30;
+  color: #571C6E;
 }
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #ff7f50;
+  background-color: #A01D7A;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
@@ -71,12 +76,12 @@ a:active { /* selected link */
 }
 .button.contact {
   background-color: transparent;
-  color: #ff7f50;
+  color: #A01D7A;
   text-transform: uppercase;
-  border: 2px solid #ff7f50;
+  border: 2px solid #A01D7A;
 }
 .button.contact:hover {
-  background-color: #ff7f50;
+  background-color: #A01D7A;
   color: #ffffff;
 }
 
