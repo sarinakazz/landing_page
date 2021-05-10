@@ -9,8 +9,8 @@
   <title>Welcome to Whimsic</title>
   <!-- add normalize below -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
- <link rel="stylesheet" type="text/css" href="css/style.css">
- <!-- add your style.css file below that's in the css directory -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- add your style.css file below that's in the css directory -->
   <link href="favicon.ico" rel="shortcut icon">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -18,69 +18,78 @@
 
 <body>
   <header>
-    <div>
-      <img src="https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo2.png" alt="Whimsic logo" />
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="support.html">Support</a></li>
-        </ul>
-      </nav>
-    </div>
+    <div class="container">
+      <div>
+        <img src="https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo2.png" alt="Whimsic logo" />
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        </nav>
+      </div>
   </header>
   <main>
     <!-- new content -->
     <div id="header">
-      <h1>Welcome to Whimsic</h1>
-      <div>
-        <div id="My_photo">
-          <picture>
-            <source srcset="img/myphoto600px.jpg" media="(max-width:767px)" />
-            <img src="img/myphoto1200px.jpg" alt="Whimsic Photo" />
-          </picture>
-        </div>
-        <div id="the_story">
-          <h2>The Story</h2>
-          <p>
-            Whimsic is a modern music player app in which you enter to escape reality. With millions of tracks and visuals to stream, there is never something new to discover. See for yourself, enter the world of Whimsic.
-          </p>
-        </div>
-      </div>
-      <div>
-        <div id="My_photo">
-          <picture>
-            <source srcset="img/myphoto600px.jpg" media="(max-width:767px)" />
-            <img src="img/myphoto1200px.jpg" alt="Whimsic Photo2" />
- </picture>
- </div>
- <div id="mission">
-   <h3>The Mission</h3>
-   <p>
-     Our mission is to unlock the potential of human creativity—by giving a million creative artists the opportunity to live off their art and billions of fans the opportunity to enjoy and be inspired by it.
-   </p>
- </div>
- <div>
-   <h3>Features</h3>
-   <p>
-     Follow your favorite artists, create playlists catered to your style, listen offline, stream captivating visuals, and more! With Whimsic, the possibilities are endless.
-   </p>
- </div>
- </div>
- </div>
+      <div class="container">
+        <h1>Welcome to Whimsic</h1>
+        <div>
+          <div id="My_photo">
+            <picture>
+              <source srcset="img/myphoto600px.jpg" media="(max-width:767px)" />
+              <img src="img/myphoto1200px.jpg" alt="Whimsic Photo" />
+            </picture>
+          </div>
+          <div id="the_story">
+            <div class="container">
+              <h2>My Work</h2>
+              <div class="row">
+                <h2>The Story</h2>
+                <p>
+                  Whimsic is a modern music player app in which you enter to escape reality. With millions of tracks and visuals to stream, there is never something new to discover. See for yourself, enter the world of Whimsic.
+                </p>
+              </div>
+            </div>
+            <div>
+              <div id="My_photo">
+                <picture>
+                  <source srcset="img/myphoto600px.jpg" media="(max-width:767px)" />
+                  <img src="img/myphoto1200px.jpg" alt="Whimsic Photo2" />
+                </picture>
+              </div>
+              <div id="mission">
+                <h3>The Mission</h3>
+                <p>
+                  Our mission is to unlock the potential of human creativity—by giving a million creative artists the opportunity to live off their art and billions of fans the opportunity to enjoy and be inspired by it.
+                </p>
+              </div>
+              <div>
+                <h3>Features</h3>
+                <p>
+                  Follow your favorite artists, create playlists catered to your style, listen offline, stream captivating visuals, and more! With Whimsic, the possibilities are endless.
+                </p>
+              </div>
+            </div>
+          </div>
   </main>
   <footer id="contact">
-    <div>
-      <!-- email icon -->
-<svg id="Capa_1" enable-background="new 0 0 479.058 479.058" height="512" viewBox="0 0 479.058 479.058" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m434.146 59.882h-389.234c-24.766 0-44.912 20.146-44.912 44.912v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159l-200.355 173.649-200.356-173.649c1.769-.736 3.704-1.159 5.738-1.159zm0 299.411h-389.234c-8.26 0-14.971-6.71-14.971-14.971v-251.648l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"/></svg>
-      <h2>Contact Us</h2>
+    <div class="container">
       <div>
-        <a href="mailto:sara@sarinakazan@gmail.com">Email</a>
+        <!-- email icon -->
+        <svg id="Capa_1" enable-background="new 0 0 479.058 479.058" height="512" viewBox="0 0 479.058 479.058" width="512" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="m434.146 59.882h-389.234c-24.766 0-44.912 20.146-44.912 44.912v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159l-200.355 173.649-200.356-173.649c1.769-.736 3.704-1.159 5.738-1.159zm0 299.411h-389.234c-8.26 0-14.971-6.71-14.971-14.971v-251.648l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z" />
+        </svg>
+        <h2>Contact Us</h2>
+        <div>
+          <a href="mailto:sara@sarinakazan@gmail.com">Email</a>
+        </div>
+        <div>
+          <p>Copyright Whimsic 2021</p>
+        </div>
       </div>
-      <div>
-        <p>Copyright Whimsic 2021</p>
-      </div>
-    </div>
   </footer>
 </body>
 
