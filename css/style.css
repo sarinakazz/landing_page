@@ -9,18 +9,16 @@ header{
   background-color: #230C42;
 }
 body {
-  background-color: dark purple
+  background-color: #A01D7A;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 img {
   width: 100%;
 }
 
-  {
-  font-family: 'Roboto', sans-serif;
-  font size: 16px;
-  line height: 1.6;
-}
 
 h1, h2, h3, h4 {
   line height: 1.4;
@@ -91,4 +89,36 @@ a:active { /* selected link */
   background-color: dark pink;
 }
 
-</style>
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
