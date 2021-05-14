@@ -11,6 +11,57 @@ Accent Color 2 (pink): #A01D7A;
 header{
   background-color: #230C42;
 }
+nav {
+  display: inline-block;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+  margin-bottom: -8px;
+}
+
+nav > ul > li > a {
+  padding: 0 8px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #A01D7A;
+  background-color: #ffffff;
+  display: inline-block;
+  text-align: right;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  text-align: end;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 16px;
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+
+.navtoggle.responsive nav {
+  padding: 45px 0 0;
+  float: right;
+}
 body {
   background-color: #A01D7A;
   font-family: 'Roboto', sans-serif;
@@ -85,7 +136,59 @@ a:active { /* selected link */
   background-color: #A01D7A;
   color: #ffffff;
 }
+/* Layout styling */
+.container {
+  padding: 0 16px;
+}
 
+.containernav {
+  padding-left: 16px;
+  padding-right: 12px;
+  overflow: auto;
+}
+
+.row {
+  margin: 24px 0;
+
+  /* 24px top and bottom, 0 left and right */
+}
+
+#work .row {
+  padding-bottom: 48px;
+  border-bottom: 1px solid #ffffff;
+  padding-top: 28px;
+}
+
+#hero h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0.67rem 0;
+}
+
+#hero {
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background-color: #230C42;
+  margin-bottom: 16px;
+}
+
+#hero span {
+  display: block;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.about-h2 {
+  text-align: left;
+}
+
+.work-top-row {
+  margin-top: -24px;
+}
 
 @keyframes color-change {
   from {fill: #edc655;}
