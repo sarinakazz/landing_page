@@ -5,6 +5,9 @@ Secondary Color (purple): #571C6E;
 Accent Color 1 (blue): #7F0FF5;
 Accent Color 2 (pink): #A01D7A;
 */
+* {
+  box-sizing: border-box;
+}
 header{
   background-color: #230C42;
 }
@@ -83,11 +86,6 @@ a:active { /* selected link */
   color: #ffffff;
 }
 
-
-< !-- styling in the head example --><style>code {
-  color: pink;
-  background-color: dark pink;
-}
 
 @keyframes color-change {
   from {fill: #edc655;}
