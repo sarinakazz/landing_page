@@ -8,20 +8,23 @@ Accent Color 2 (pink): #A01D7A;
 * {
   box-sizing: border-box;
 }
-header{
+
+header {
   background-color: #230C42;
+  font-color: #ffffff;
 }
+
 nav {
   display: inline-block;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
   display: inline-block;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
 }
 
@@ -31,7 +34,7 @@ nav > ul > li {
   margin-bottom: -8px;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 8px;
   text-transform: uppercase;
   font-weight: 700;
@@ -62,6 +65,7 @@ nav > ul > li > a {
   padding: 45px 0 0;
   float: right;
 }
+
 body {
   background-color: #A01D7A;
   font-family: 'Roboto', sans-serif;
@@ -72,7 +76,6 @@ body {
 img {
   width: 100%;
 }
-
 
 h1, h2, h3, h4 {
   line height: 1.4;
@@ -97,45 +100,61 @@ h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
+
 a {
   color: #A01D7A;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
 
-a:visited { /* visited link */
+a:visited {
+  /* visited link */
   color: #A01D7A;
 }
+
 a:hover {
   color: #571C6E;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
-a:active { /* selected link */
+
+a:active {
+  /* selected link */
   color: #571C6E;
 }
+
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #A01D7A;
-  color: #ffffff; /* needed to override the default link color */
+  color: #ffffff;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  border-bottom: 2px solid #994c30;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
-  .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+
+.button:hover {
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+
 .button.contact {
   background-color: transparent;
-  color: #A01D7A;
+  color: #230C42;
   text-transform: uppercase;
   border: 2px solid #A01D7A;
 }
+
 .button.contact:hover {
   background-color: #A01D7A;
   color: #ffffff;
 }
+
 /* Layout styling */
 .container {
   padding: 0 16px;
@@ -149,7 +168,6 @@ a:active { /* selected link */
 
 .row {
   margin: 24px 0;
-
   /* 24px top and bottom, 0 left and right */
 }
 
@@ -191,9 +209,15 @@ a:active { /* selected link */
 }
 
 @keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
+  from {
+    fill: #edc655;
+  }
+
+  to {
+    fill: #f76414;
+  }
 }
+
 .sun {
   animation-duration: 4s;
   animation-name: color-change;
@@ -201,6 +225,7 @@ a:active { /* selected link */
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
 .cloud-front {
   animation-duration: 30s;
   animation-name: cloud-move;
@@ -208,14 +233,27 @@ a:active { /* selected link */
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
+
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
+
 .cloud-front {
   animation-duration: 30s;
   animation-name: cloud-move;
