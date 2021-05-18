@@ -19,20 +19,21 @@
 <body>
   <header>
     <div class="container">
-      <div>
-        <img src="whimsic logo-03.png" alt="whimsic logo" />
+      <div id="header">
+        <img src="whimsic logo-03.png" alt="whimsic logo" class="logo" />
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="about.html" target="_self">About</a></li>
             <li><a href="support.html">Support</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>" id="myNavtoggle">
           </ul>
         </nav>
       </div>
   </header>
   <main>
     <!-- new content -->
-    <div>
+    <div class="container">
       <h1>How can we help you?</h1>
       <div>
         <div id="My_photo">
@@ -86,20 +87,19 @@
   </main>
   <footer id="contact">
     <div class="container">
+      <!-- email icon -->
+      <svg id="email" enable-background="new 0 0 479.058 479.058" height="512" viewBox="0 0 479.058 479.058" width="512" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="m434.146 59.882h-389.234c-24.766 0-44.912 20.146-44.912 44.912v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159l-200.355 173.649-200.356-173.649c1.769-.736 3.704-1.159 5.738-1.159zm0 299.411h-389.234c-8.26 0-14.971-6.71-14.971-14.971v-251.648l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z" />
+      </svg>
+      <h2>Contact Us</h2>
       <div>
-        <!-- email icon -->
-        <svg id="Capa_1" enable-background="new 0 0 479.058 479.058" height="512" viewBox="0 0 479.058 479.058" width="512" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="m434.146 59.882h-389.234c-24.766 0-44.912 20.146-44.912 44.912v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159l-200.355 173.649-200.356-173.649c1.769-.736 3.704-1.159 5.738-1.159zm0 299.411h-389.234c-8.26 0-14.971-6.71-14.971-14.971v-251.648l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z" />
-        </svg>
-        <h2>Contact Us</h2>
-        <div>
-          <a href="mailto:sara@sarinakazan@gmail.com">Email</a>
-        </div>
-        <div>
-          <p>Copyright Whimsic 2021</p>
-        </div>
+        <a href="mailto:sara@sarinakazan@gmail.com" class="button">Email</a>
       </div>
+      <div>
+        <p>Copyright Whimsic 2021</p>
+      </div>
+    </div>
   </footer>
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/scripts.js"></script>

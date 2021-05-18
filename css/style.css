@@ -14,6 +14,19 @@ header {
   font-color: #ffffff;
 }
 
+body {
+  background-color: #A01D7A;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.logo {
+  display: inline-block;
+  width: 250px;
+  margin: 0 auto;
+}
+
 nav {
   display: inline-block;
 }
@@ -66,13 +79,6 @@ nav>ul>li>a {
   float: right;
 }
 
-body {
-  background-color: #A01D7A;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
 img {
   width: 100%;
 }
@@ -107,11 +113,6 @@ a {
   /* No underlining */
 }
 
-a:visited {
-  /* visited link */
-  color: #A01D7A;
-}
-
 a:hover {
   color: #571C6E;
   text-decoration: underline;
@@ -142,6 +143,11 @@ a:active {
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+.button:visited {
+  /* visited link */
+  color: #ffffff;
+}
+
 
 .button.contact {
   background-color: transparent;
@@ -153,6 +159,9 @@ a:active {
 .button.contact:hover {
   background-color: #A01D7A;
   color: #ffffff;
+}
+#header {
+  text-align: center;
 }
 
 /* Layout styling */
@@ -181,8 +190,11 @@ a:active {
   text-align: center;
   margin: 0;
   padding: 0.67rem 0;
+  color: #ffffff;
 }
-
+#hero p{
+  color: #ffffff;
+}
 #hero {
   padding: 20px 0;
   display: inline-block;
@@ -208,6 +220,9 @@ a:active {
   margin-top: -24px;
 }
 
+.berlin-illustration{
+  max-width: 100%;
+}
 @keyframes color-change {
   from {
     fill: #edc655;
@@ -260,4 +275,11 @@ a:active {
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
+}
+footer {
+  text-align: center;
+}
+#email {
+  width: 50px;
+  height: 50px;
 }
