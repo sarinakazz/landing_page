@@ -32,6 +32,13 @@ nav {
   float: right;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
 nav>ul {
   list-style-type: none;
   padding: 0;
@@ -79,6 +86,7 @@ nav>ul>li>a {
   padding: 45px 0 0;
   float: right;
 }
+
 
 img {
   width: 100%;
