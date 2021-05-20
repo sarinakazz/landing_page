@@ -32,17 +32,6 @@ body {
   margin: 0 auto;
 }
 
-nav {
-  display: inline-block;
-  float: right;
-}
-
-.navtoggle li:not(:last-child) {
-  display: none;
-}
-.navtoggle li:not(:last-child) {
-  display: inline-block;
-}
 
 nav>ul {
   list-style-type: none;
