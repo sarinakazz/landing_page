@@ -26,6 +26,11 @@ body {
   width: 250px;
   margin: 0 auto;
 }
+.supporticon {
+  display: inline-block;
+  width: 500px;
+  margin: 0 auto;
+}
 
 nav {
   display: inline-block;
@@ -135,10 +140,6 @@ a:active {
 
 .button {
   display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #A01D7A;
-  color: #ffffff;
-  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
@@ -294,6 +295,7 @@ footer {
   height: 50px;
 }
 
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -350,5 +352,4 @@ Large devices (1024px or larger)
   }
 }
 #header nav {
-  float: right;
-}
+  float: right;}
