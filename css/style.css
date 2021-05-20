@@ -26,17 +26,17 @@ body {
   width: 250px;
   margin: 0 auto;
 }
+
 .supporticon {
   display: inline-block;
   width: 500px;
   margin: 0 auto;
 }
 
-
 nav>ul {
   list-style-type: none;
   padding: 0;
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li {
@@ -67,6 +67,11 @@ nav>ul>li>a {
   display: block;
   text-align: end;
 }
+.navtoggle.responsive li:not(:last-child) a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+}
 
 .navtoggle li .icon {
   position: absolute;
@@ -76,11 +81,7 @@ nav>ul>li>a {
   margin-bottom: 2px;
 }
 
-.navtoggle.responsive nav {
-  padding: 45px 0 0;
-  float: right;
-}
-
+nav {}
 
 img {
   width: 100%;
@@ -143,11 +144,11 @@ a:active {
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+
 .button:visited {
   /* visited link */
   color: #ffffff;
 }
-
 
 .button.contact {
   background-color: transparent;
@@ -160,6 +161,7 @@ a:active {
   background-color: #A01D7A;
   color: #ffffff;
 }
+
 #header {
   text-align: center;
 }
@@ -192,9 +194,11 @@ a:active {
   padding: 0.67rem 0;
   color: #ffffff;
 }
-#hero p{
+
+#hero p {
   color: #ffffff;
 }
+
 #hero {
   padding: 20px 0;
   display: inline-block;
@@ -220,9 +224,10 @@ a:active {
   margin-top: -24px;
 }
 
-.berlin-illustration{
+.berlin-illustration {
   max-width: 100%;
 }
+
 @keyframes color-change {
   from {
     fill: #edc655;
@@ -276,45 +281,84 @@ a:active {
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
 footer {
   text-align: center;
 }
+
 #email {
   width: 50px;
   height: 50px;
 }
-
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   [class*="col-"] {
-  float: left;
-  padding: 20px;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.col-md-1 {width: 8.33%;}
-.col-md-2 {width: 16.66%;}
-.col-md-3 {width: 25%;}
-.col-md-4 {width: 33.33%;}
-.col-md-5 {width: 41.66%;}
-.col-md-6 {width: 50%;}
-.col-md-7 {width: 58.33%;}
-.col-md-8 {width: 66.66%;}
-.col-md-9 {width: 75%;}
-.col-md-10 {width: 83.33%;}
-.col-md-11 {width: 91.66%;}
-.col-md-12 {width: 100%;}
+    float: left;
+    padding: 20px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .col-md-1 {
+    width: 8.33%;
+  }
+
+  .col-md-2 {
+    width: 16.66%;
+  }
+
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-4 {
+    width: 33.33%;
+  }
+
+  .col-md-5 {
+    width: 41.66%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-7 {
+    width: 58.33%;
+  }
+
+  .col-md-8 {
+    width: 66.66%;
+  }
+
+  .col-md-9 {
+    width: 75%;
+  }
+
+  .col-md-10 {
+    width: 83.33%;
+  }
+
+  .col-md-11 {
+    width: 91.66%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
 }
 
 /* ==============================
@@ -322,23 +366,69 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
   [class*="col-"] {
-  float: left;
-}
-  .col-lg-1 {width: 8.33%;}
-  .col-lg-2 {width: 16.66%;}
-  .col-lg-3 {width: 25%;}
-  .col-lg-4 {width: 33.33%;}
-  .col-lg-5 {width: 41.66%;}
-  .col-lg-6 {width: 50%;}
-  .col-lg-7 {width: 58.33%;}
-  .col-lg-8 {width: 66.66%;}
-  .col-lg-9 {width: 75%;}
-  .col-lg-10 {width: 83.33%;}
-  .col-lg-11 {width: 91.66%;}
-  .col-lg-12 {width: 100%;}
+    float: left;
+  }
+
+  .col-lg-1 {
+    width: 8.33%;
+  }
+
+  .col-lg-2 {
+    width: 16.66%;
+  }
+
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  .col-lg-4 {
+    width: 33.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-8 {
+    width: 66.66%;
+  }
+
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  .col-lg-10 {
+    width: 83.33%;
+  }
+
+  .col-lg-11 {
+    width: 91.66%;
+  }
+
+  .col-lg-12 {
+    width: 100%;
+  }
+
   #header {
     text-align: unset;
   }
+
+  #header nav {
+    float: right;
+    padding-top: 24px
+  }
+  nav>ul>li:last-child{
+    display: none;
+  }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
 }
-#header nav {
-  float: right;}
